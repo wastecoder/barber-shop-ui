@@ -13,3 +13,20 @@
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
+
+/* 1. Altera a cor de fundo ao passar o mouse sobre os botões "Clientes" e "Agendar" */
+button[mat-button]:hover {
+    background-color: #242424 !important;
+    color: white !important;
+}
+
+/* 2. Define a cor de fundo do menu dropdown */
+::ng-deep .mat-mdc-menu-content {
+    background-color: #242424 !important;
+}
+
+/* 3. Altera a cor do hover dos itens dentro do menu dropdown */
+::ng-deep .mat-mdc-menu-item:hover {
+    background-color: #3a3a3a !important;
+    color: white !important;
+}
