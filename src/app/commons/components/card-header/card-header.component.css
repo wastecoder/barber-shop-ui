@@ -14,3 +14,13 @@
     padding-bottom: 3rem;
     margin-bottom: 3rem;
 }
+
+/* Muda cor do fundo */
+::ng-deep .card-title {
+    background-color: #101010 !important;
+}
+
+/* Coloca o texto em letras maiúsculas */
+::ng-deep .mat-mdc-card-title {
+    text-transform: uppercase !important;
+}
