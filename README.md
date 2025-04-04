@@ -1,59 +1,28 @@
-# AngularBarberShop
+# Sistema de Agendamento para Barbearia
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+## Visão Geral
+Este projeto consiste em um sistema de agendamento para uma barbearia, composto por duas partes:
+uma aplicação front-end desenvolvida em Angular e uma API back-end implementada com Spring Boot.
+O sistema permite o cadastro e gerenciamento de clientes, bem como a realização de agendamentos, garantindo que cada horário de serviço tenha uma duração fixa de uma hora.
 
-## Development server
+Os repositórios do front-end e do back-end são separados, sendo necessário configurar ambos para o funcionamento completo da aplicação.
 
-To start a local development server, run:
+## Funcionalidades
+- __Cadastro de Clientes:__ Possibilidade de adicionar, editar e excluir clientes.
+- __Agendamento de Horários:__ O usuário seleciona uma data e um horário inicial; o término do serviço é automaticamente definido para uma hora depois.
+- __Restrição em Agendamentos:__ Os agendamentos criados podem apenas ser excluídos, não editados.
+- __Interface Amigável:__ Tema escuro, notificações visuais para informações de sucesso e erro.
 
-```bash
-ng serve
-```
+## Tecnologias Utilizadas
+- __Angular:__ Framework principal da interface.
+- __Bootstrap e Angular Material:__ Para estilização e componentes visuais.
+- __Uso de Interfaces:__ Para garantir tipagem adequada e melhor desacoplamento do código.
+- __Tema Escuro:__ Interface visual otimizada para conforto do usuário.
+- __Gerenciamento de Configuração:__ O endereço da API é definido no arquivo environments/environment.ts.
+- __Notificações:__ Indicam quando um usuário é cadastrado, editado ou excluído.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Configuração
+Para rodar a aplicação, é necessário que o back-end esteja em execução.
+Certifique-se de que a API está disponível na porta correta e que a URL está configurada no arquivo [environment.ts](https://github.com/wastecoder/barber-shop-ui/blob/main/src/environments/environment.ts).
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Repositório do back-end: [Barber-Shop-API](https://github.com/wastecoder/barber-shop-api)
