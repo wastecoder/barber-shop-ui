@@ -8,3 +8,27 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Muda a cor do fundo do campo */
+::ng-deep .mat-mdc-text-field-wrapper {
+    background-color: #242424 !important;
+}
+
+/* Muda a cor do texto digitado */
+.mat-mdc-input-element {
+    color: #FFF !important;
+}
+
+/* Cor da mensagem de erro */
+mat-error {
+    color: #ff485c !important;
+}
+
+/* Estilização do botão */
+button {
+    width: 200px;
+    border-radius: 10px;
+    background-color: #242424 !important;
+    padding: 25px;
+    font-size: 16px;
+}
