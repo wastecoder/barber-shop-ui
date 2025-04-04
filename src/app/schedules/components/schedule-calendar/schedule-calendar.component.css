@@ -1,3 +1,103 @@
 .calendar-card {
     width: 30rem;
 }
+
+/* ===== Estilos Gerais ===== */
+
+/* Define a cor de fundo e do texto nos elementos principais */
+::ng-deep .calendar-card,
+::ng-deep table.mat-elevation-z8,
+::ng-deep .mat-calendar,
+::ng-deep .mat-mdc-table {
+    background-color: #242424 !important;
+    color: #FFF !important;
+}
+
+/* Ajusta a cor do texto no calendário */
+::ng-deep .mat-calendar-body-label,
+::ng-deep .mat-calendar-body-cell-content {
+    color: #FFF !important;
+}
+
+/* Adiciona borda arredondada ao calendário */
+::ng-deep .mat-calendar {
+    border-radius: 8px !important;
+}
+
+/* Altera a cor ao passar o mouse sobre um dia no calendário */
+::ng-deep .mat-calendar-body-cell-content:hover {
+    background-color: #3d85c6 !important; /* Azul */
+    color: white !important;
+}
+
+/* ===== Estilos para Inputs e Seletores ===== */
+
+/* Define a cor de fundo dos inputs (horário de início e cliente) */
+::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field.mdc-text-field--filled {
+    background-color: #303030 !important;
+}
+
+/* Ajusta a cor do texto dentro dos inputs */
+::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field.mdc-text-field--filled * {
+    color: #FFF !important;
+}
+
+/* Ajusta a cor de fundo e do texto do dropdown de seleção de hora */
+::ng-deep .mat-timepicker-panel {
+    background-color: #303030 !important;
+    color: #FFF !important;
+}
+
+/* Ajusta a cor do menu suspenso (dropdown) de seleção de itens por página */
+::ng-deep .mat-mdc-select-panel {
+    background-color: #242424 !important;
+}
+
+/* Ajusta a cor do texto nos inputs e selects */
+::ng-deep .mat-select-value, 
+::ng-deep .mat-input-element,
+::ng-deep .mat-form-field-label {
+    color: #FFF !important;
+}
+
+/* ===== Estilização do Botão de Envio do Formulário ===== */
+
+/* Muda a cor do ícone dentro do botão de envio */
+::ng-deep .mat-icon.notranslate {
+    color: #FFF !important;
+}
+
+/* Muda a cor de fundo do botão de envio */
+::ng-deep .mat-mdc-button-persistent-ripple.mdc-fab__ripple {
+    background-color: #303030 !important;
+}
+
+/* ===== Estilização da Tabela ===== */
+
+/* Define a cor do cabeçalho da tabela */
+::ng-deep .mat-mdc-header-row {
+    background-color: #1A1A1A !important;
+}
+
+/* Ajusta o paginator para o tema escuro */
+::ng-deep .mat-mdc-paginator {
+    background-color: #1A1A1A !important;
+    color: white !important;
+}
+
+/* Ajusta o hover dos botões do paginator */
+::ng-deep .mat-mdc-paginator .mat-mdc-icon-button:hover {
+    background-color: #303030 !important;
+}
+
+/* ===== Estilização do Botão de Excluir na Tabela ===== */
+
+/* Ajusta apenas o botão de excluir dentro da tabela */
+::ng-deep table.mat-mdc-table .mat-mdc-tooltip-trigger.mdc-fab {
+    background-color: #303030 !important; /* Cinza */
+}
+
+/* Ajusta apenas o ícone dentro do botão de excluir na tabela */
+::ng-deep table.mat-mdc-table .mat-icon.notranslate {
+    color: white !important;
+}
