@@ -5,3 +5,44 @@
 .update-button {
     margin-left: 0.15rem;
 }
+
+/* 1. Define a cor de fundo da tabela */
+::ng-deep .mat-mdc-table {
+    background-color: #242424 !important;
+}
+
+/* 2. Altera a cor das fontes para branco */
+::ng-deep .mat-mdc-header-cell,
+::ng-deep .mat-mdc-cell {
+    color: white !important;
+}
+
+/* Opcional: Ajuste do fundo do cabeçalho para maior contraste */
+::ng-deep .mat-mdc-header-row {
+    background-color: #1A1A1A !important;
+}
+
+/* 3. Ajusta o fundo dos botões de ação e a cor do ícone */
+::ng-deep .delete-button,
+::ng-deep .update-button {
+    background-color: #303030 !important;
+    color: white !important;
+}
+
+/* 4. Ajuste do paginator para o tema escuro */
+::ng-deep .mat-mdc-paginator {
+    background-color: #1A1A1A !important;
+    color: white !important;
+}
+
+/* Ajusta a cor do hover dos botões do paginator */
+::ng-deep .mat-mdc-paginator .mat-mdc-icon-button:hover {
+    background-color: #303030 !important;
+}
+
+/* Ajusta a cor do menu suspenso (dropdown) de seleção de itens por página */
+::ng-deep .mat-mdc-select-panel {
+    background-color: #242424 !important;
+}
+
+/* TODO: os botões de voltar e avançar do paginator não estão ficando branco */
