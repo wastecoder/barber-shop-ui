@@ -26,3 +26,19 @@ Para rodar a aplicação, é necessário que o back-end esteja em execução.
 Certifique-se de que a API está disponível na porta correta e que a URL está configurada no arquivo [environment.ts](https://github.com/wastecoder/barber-shop-ui/blob/main/src/environments/environment.ts).
 
 Repositório do back-end: [Barber-Shop-API](https://github.com/wastecoder/barber-shop-api)
+
+## Instalação
+1. Clone o projeto na pasta desejada:
+```bash
+git clone https://github.com/wastecoder/barber-shop-ui.git
+```
+2. Baixe as dependências do projeto
+```bash
+npm install
+```
+  - O comando acima criará a pasta "node_modules"
+3. Execute o projeto localmente
+```bash
+ng s -o
+```
+  - Isso irá iniciar e abrir o projeto no navegador
